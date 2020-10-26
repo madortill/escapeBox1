@@ -5,6 +5,10 @@ img{
     height: 150px;
     width:230px;
 }
+#help {
+  visibility: hidden;
+  color: darkred;
+}
 .l-lb{
 }
 #bridge {
@@ -44,5 +48,9 @@ img{
     padding-right: 5px;
 }
 .the_quetion{
-   text-align: right;
+   text-align: center;
 }
+h1{
+  margin-bottom: 50px;
+}
+
