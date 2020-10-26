@@ -1,0 +1,48 @@
+div{
+    text-align: center;
+}
+img{
+    height: 150px;
+    width:230px;
+}
+.l-lb{
+}
+#bridge {
+     text-align: center;
+    height: 150px;
+    width:230px;
+  background-image: url('pics/7.png');
+	background-image: -webkit-image-set(url('pics/7.png') 1x, url('pics/7.png') 2x );
+	background-size: contain;
+    background-repeat: no-repeat;
+  cursor:  crosshair;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+    padding-right: 5px;
+}
+#bridge1 {
+     text-align: center;
+    height: 150px;
+    width:230px;
+  background-image: url('pics/9.png');
+	background-image: -webkit-image-set(url('pics/9.png') 1x, url('pics/9.png') 2x );
+	background-size: contain;
+    background-repeat: no-repeat;
+  cursor:  crosshair;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+    padding-right: 5px;
+}
+#bridge2 {
+     text-align: center;
+    height: 150px;
+    width:230px;
+  background-image: url('pics/2.png');
+	background-image: -webkit-image-set(url('pics/2.png') 1x, url('pics/2.png') 2x );
+	background-size: contain;
+    background-repeat: no-repeat;
+  cursor:  crosshair;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+    padding-right: 5px;
+}
+.the_quetion{
+   text-align: right;
+}

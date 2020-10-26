@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="newJS.js"></script>
+      
+    </head>
+<body dir="rtl" >
+   
+    <div class="the_quetion">
+        <h1>בחר את הגדוד והמחזור </h1>
+        <select name="גדוד"  onchange="selectgdud(this.value)" >
+            <option value="הכל">הכל</option>
+            <option value="אריות">אריות</option>
+            <option value="נמרים">נמרים</option>
+            <option value="יחמורים">יחמורים</option>
+        </select><br><br>
+        <select class="machzor" ame="מחזור" onchange="selectmachzor(this.value)" >
+            <option value="הכל">הכל</option>
+            <option value="ל">ל"</option>
+            <option value="לא">ל"א</option>
+            <option value="לב">ל"ב</option>
+            <option value="לג">ל"ג</option>
+        </select>
+        <script>
+           function selectgdud(gdud){
+               if(gdud=='הכל'){
+                 var elem=document.getElementsByTagName('img');
+                   for(var j=0; j<elem.length; j++){
+                       elem[j].style.visibility="visible";
+                   }
+                   elem=document.getElementsByTagName('canvas');
+                   for( j=0; j<elem.length; j++){
+                       elem[j].style.visibility="visible";
+                   }
+                   var elem2=document.getElementsByClassName('machzor');
+               }
+               
+               if(gdud=='אריות'){
+                 var el=document.getElementsByClassName('n');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                  el=document.getElementsByClassName('y');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('a');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="visible";
+                   }
+               }
+               else if(gdud=='נמרים'){
+                   var el=document.getElementsByClassName('a');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                  el=document.getElementsByClassName('y');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('n');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="visible";
+                   }
+               }
+               else if(gdud=='יחמורים'){
+                   var el=document.getElementsByClassName('a');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                  el=document.getElementsByClassName('n');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('y');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="visible";
+                   }
+               }
+               
+           }
+            function selectmachzor(machzor){
+                if(machzor =='הכל'){
+                 var elem=document.getElementsByTagName('img');
+                   for(var j=0; j<elem.length; j++){
+                       elem[j].style.visibility="visible";
+                   }
+                   elem=document.getElementsByTagName('canvas');
+                   for( j=0; j<elem.length; j++){
+                       elem[j].style.visibility="visible";
+                   }
+               }
+                if(machzor=='לב'){
+                 var el=document.getElementsByClassName('l');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('la')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lg')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lb')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="visible";
+                   }
+               }
+                   else if(machzor=='לא'){
+                 var el=document.getElementsByClassName('l');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lb')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lg')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('la')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="visible";
+                    } 
+                   }
+                else if(machzor=='ל'){
+                 var el=document.getElementsByClassName('la');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lb')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lg')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('l')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="visible";
+                    } 
+                   } 
+                else if(machzor=='לג'){
+                 var el=document.getElementsByClassName('la');
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lb')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('l')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="hidden";
+                   }
+                   el=document.getElementsByClassName('lg')
+                   for(var i=0; i<el.length; i++){
+                       el[i].style.visibility="visible";
+                    } 
+                   }
+            }
+        </script>
+    </div>
+    <div  class="textSord">
+        <h1>חשודים</h1>
+        <img src="pics/TIL_8914.JPG" class="l a">
+        <br>
+        <br>
+        <canvas class='lb a' id="bridge" ></canvas>
+        <br>
+        <br>
+        <img src="pics/TIL_8915.JPG" class="la n">
+        <br>
+        <br>
+        <img src="pics/TIL_8937.JPG" class="la a">
+        <br>  
+        <br>  
+        <img src="pics/TIL_8923.JPG" class='lg a'>
+        <br>
+        <br>
+        <canvas class='lb a' id="bridge1" ></canvas>
+        <br>
+        <br>
+        <img src="pics/TIL_8917.JPG" class="l n">
+        <br>
+        <br>
+        <img src="pics/TIL_8928.JPG" class="l n">
+        <br>
+        <br>
+       <img src="pics/TIL_8954.JPG" class="lg y">
+        <br>
+        <br>
+         <canvas class='lb a' id="bridge2" ></canvas>
+        <br>
+        <br>
+        <img src="pics/TIL_8927.JPG" class="la y">
+        <br>
+        <br>
+    </div>  
+    </body>
+   
+    <script>
+var bridge = document.getElementById("bridge"),
+bridgeCanvas = bridge.getContext('2d'),
+brushRadius = (bridge.width / 100) * 5,
+img = new Image();
+
+if (brushRadius < 50) { brushRadius = 50 }
+
+img.onload = function(){  
+	bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
+}
+
+	img.src ='pics/TIL_8912.JPG';
+
+
+function detectLeftButton(event) {
+    if ('buttons' in event) {
+        return event.buttons === 1;
+    } else if ('which' in event) {
+        return event.which === 1;
+    } else {
+        return event.button === 1;
+    }
+}
+
+function getBrushPos(xRef, yRef) {
+	var bridgeRect = bridge.getBoundingClientRect();
+    return {
+	  x: Math.floor((xRef-bridgeRect.left)/(bridgeRect.right-bridgeRect.left)*bridge.width),
+	  y: Math.floor((yRef-bridgeRect.top)/(bridgeRect.bottom-bridgeRect.top)*bridge.height)
+    };
+}
+      
+function drawDot(mouseX,mouseY){
+	bridgeCanvas.beginPath();
+    bridgeCanvas.arc(mouseX, mouseY, brushRadius, 0, 2*Math.PI, true);
+    bridgeCanvas.fillStyle = '#000';
+    bridgeCanvas.globalCompositeOperation = "destination-out";
+    bridgeCanvas.fill();
+}
+
+bridge.addEventListener("mousemove", function(e) {
+	var brushPos = getBrushPos(e.clientX, e.clientY);
+  var leftBut = detectLeftButton(e);
+  if (leftBut == 1) {
+		drawDot(brushPos.x, brushPos.y);
+  }
+}, false);
+
+bridge.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+    var touch = e.targetTouches[0];
+    if (touch) {
+    var brushPos = getBrushPos(touch.pageX, touch.pageY);
+        drawDot(brushPos.x, brushPos.y);
+    }
+}, false);
+        
+    </script>
+    
+    <script>
+var bridge1 = document.getElementById("bridge1"),
+bridgeCanvas1 = bridge1.getContext('2d'),
+brushRadius1 = (bridge1.width / 100) * 5,
+img1 = new Image();
+
+if (brushRadius1 < 50) { brushRadius1 = 50 }
+
+img1.onload = function(){  
+	bridgeCanvas1.drawImage(img1, 0, 0, bridge1.width, bridge1.height);
+}
+img1.loc = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/';
+img1.filename = 'calgary-bridge-2013.jpg';
+if (window.devicePixelRatio >= 2) {
+	var nameParts1 = img1.filename.split('.');
+	img1.src = img1.loc + nameParts1[0]+"-2x"+"."+nameParts1[1];
+} else {
+	img1.src ='pics/TIL_8936.JPG';
+}
+
+function detectLeftButton1(event) {
+    if ('buttons' in event) {
+        return event.buttons === 1;
+    } else if ('which' in event) {
+        return event.which === 1;
+    } else {
+        return event.button === 1;
+    }
+}
+
+function getBrushPos1(xRef, yRef) {
+	var bridgeRect1 = bridge1.getBoundingClientRect();
+    return {
+	  x: Math.floor((xRef-bridgeRect1.left)/(bridgeRect1.right-bridgeRect1.left)*bridge1.width),
+	  y: Math.floor((yRef-bridgeRect1.top)/(bridgeRect1.bottom-bridgeRect1.top)*bridge1.height)
+    };
+}
+      
+function drawDot1(mouseX,mouseY){
+	bridgeCanvas1.beginPath();
+    bridgeCanvas1.arc(mouseX, mouseY, brushRadius1, 0, 2*Math.PI, true);
+    bridgeCanvas1.fillStyle = '#000';
+    bridgeCanvas1.globalCompositeOperation = "destination-out";
+    bridgeCanvas1.fill();
+}
+
+bridge1.addEventListener("mousemove", function(e) {
+	var brushPos1 = getBrushPos1(e.clientX, e.clientY);
+  var leftBut1 = detectLeftButton(e);
+  if (leftBut1 == 1) {
+		drawDot1(brushPos1.x, brushPos1.y);
+  }
+}, false);
+
+bridge1.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+    var touch1 = e.targetTouches[0];
+    if (touch1) {
+    var brushPos1 = getBrushPos1(touch1.pageX, touch1.pageY);
+        drawDot1(brushPos1.x, brushPos1.y);
+    }
+}, false);
+        
+    </script>
+    <script>
+var bridge2 = document.getElementById("bridge2"),
+bridgeCanvas2 = bridge2.getContext('2d'),
+brushRadius2 = (bridge2.width / 100) * 5,
+img2 = new Image();
+
+if (brushRadius2 < 50) { brushRadius2 = 50 }
+
+img2.onload = function(){  
+	bridgeCanvas2.drawImage(img2, 0, 0, bridge2.width, bridge2.height);
+}
+img2.loc = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/';
+img2.filename = 'calgary-bridge-2013.jpg';
+if (window.devicePixelRatio >= 2) {
+	var nameParts2 = img2.filename.split('.');
+	img2.src = img2.loc + nameParts2[0]+"-2x"+"."+nameParts2[1];
+} else {
+	img2.src ='pics/TIL_8918.JPG';
+}
+
+function detectLeftButton1(event) {
+    if ('buttons' in event) {
+        return event.buttons === 1;
+    } else if ('which' in event) {
+        return event.which === 1;
+    } else {
+        return event.button === 1;
+    }
+}
+
+function getBrushPos2(xRef, yRef) {
+	var bridgeRect2 = bridge2.getBoundingClientRect();
+    return {
+	  x: Math.floor((xRef-bridgeRect2.left)/(bridgeRect2.right-bridgeRect2.left)*bridge2.width),
+	  y: Math.floor((yRef-bridgeRect2.top)/(bridgeRect2.bottom-bridgeRect2.top)*bridge2.height)
+    };
+}
+      
+function drawDot2(mouseX,mouseY){
+	bridgeCanvas2.beginPath();
+    bridgeCanvas2.arc(mouseX, mouseY, brushRadius2, 0, 2*Math.PI, true);
+    bridgeCanvas2.fillStyle = '#000';
+    bridgeCanvas2.globalCompositeOperation = "destination-out";
+    bridgeCanvas2.fill();
+}
+
+bridge2.addEventListener("mousemove", function(e) {
+	var brushPos2 = getBrushPos2(e.clientX, e.clientY);
+  var leftBut2 = detectLeftButton(e);
+  if (leftBut2 == 1) {
+		drawDot2(brushPos2.x, brushPos2.y);
+  }
+}, false);
+
+bridge2.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+    var touch2 = e.targetTouches[0];
+    if (touch2) {
+    var brushPos2 = getBrushPos2(touch2.pageX, touch2.pageY);
+        drawDot2(brushPos2.x, brushPos2.y);
+    }
+}, false);
+        
+    </script>
+
+    </html>
