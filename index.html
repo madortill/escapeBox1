@@ -273,7 +273,7 @@
         e.preventDefault();
         var touch = e.targetTouches[0];
         if (touch) {
-            var brushPos = getBrushPos(touch.pageX, touch.pageY);
+            var brushPos = getBrushPos(touch.clientX, touch.clientY);
             drawDot(brushPos.x, brushPos.y);
         }
     }, false);
@@ -333,7 +333,7 @@
         e.preventDefault();
         var touch1 = e.targetTouches[0];
         if (touch1) {
-            var brushPos1 = getBrushPos1(touch1.pageX, touch1.pageY);
+            var brushPos1 = getBrushPos1(touch1.clientX, touch1.clientY);
             drawDot1(brushPos1.x, brushPos1.y);
         }
     }, false);
@@ -382,6 +382,7 @@
     }
 
     bridge2.addEventListener("mousemove", function (e) {
+        console.log("touch");
         var brushPos2 = getBrushPos2(e.clientX, e.clientY);
         var leftBut2 = detectLeftButton(e);
         if (leftBut2 == 1) {
@@ -391,9 +392,10 @@
 
     bridge2.addEventListener("touchmove", function (e) {
         e.preventDefault();
+        console.log("touch");
         var touch2 = e.targetTouches[0];
         if (touch2) {
-            var brushPos2 = getBrushPos2(touch2.pageX, touch2.pageY);
+            var brushPos2 = getBrushPos2(touch2.clientX, touch2.clientY);
             drawDot2(brushPos2.x, brushPos2.y);
         }
     }, false);
