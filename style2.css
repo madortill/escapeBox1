@@ -15,7 +15,7 @@ img{
      text-align: center;
     height: 150px;
     width:230px;
-  background-image: url('pics/7.png');
+  /* background-image: url('pics/7.png'); */
 	background-image: -webkit-image-set(url('pics/7.png') 1x, url('pics/7.png') 2x );
 	background-size: contain;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ img{
      text-align: center;
     height: 150px;
     width:230px;
-  background-image: url('pics/9.png');
+  /* background-image: url('pics/9.png'); */
 	background-image: -webkit-image-set(url('pics/9.png') 1x, url('pics/9.png') 2x );
 	background-size: contain;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ img{
      text-align: center;
     height: 150px;
     width:230px;
-  background-image: url('pics/2.png');
+  /* background-image: url('pics/2.png'); */
 	background-image: -webkit-image-set(url('pics/2.png') 1x, url('pics/2.png') 2x );
 	background-size: contain;
     background-repeat: no-repeat;

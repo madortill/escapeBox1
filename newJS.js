@@ -1,3 +1,11 @@
+window.addEventListener("DOMContentLoaded", () => {
+    let imgs = document.querySelectorAll("img");
+    imgs.forEach(img => {
+        img.style.visibility = "hidden";
+        img.onload = () => img.style.visibility = ""
+    });
+});
+
 function searchName(){
     var input=document.getElementById("name");
     var filter=input.value.toUpperCase();
